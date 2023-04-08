@@ -1,7 +1,7 @@
 function test_model() {
-  $.getJSON("https://raw.githubusercontent.com/sushant-max/phishing-detection-plugin/main/static/classifier.json", 
+ $.getJSON("https://raw.githubusercontent.com/thechamppc/Phishtek/main/static/classifier.json", 
   function(clfdata) {var rf = random_forest(clfdata);
-    $.getJSON("https://raw.githubusercontent.com/sushant-max/phishing-detection-plugin/main/static/testdata.json", 
+    $.getJSON("https://raw.githubusercontent.com/thechamppc/Phishtek/main/static/testdata.json", 
     function(testdata) {
       var X = testdata['X_test'];
       var y = testdata['y_test'];
